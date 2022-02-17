@@ -50,3 +50,81 @@
 .hamburger__item::after {
     bottom: 6px;
 }
+
+/* Estilização Logo*/
+
+.logo__link {
+    display: block;
+    line-height: 0;
+}
+
+/* Estilização Search */
+
+.search {
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search__input {
+    width: calc(100% - 94px);
+    height: 32px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    border-right: 0;
+    border-radius: 1px 0px 0px 1px;
+    padding-left: 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #888888;
+}
+
+.search__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 54px;
+    width: 100%;
+    height: 32px;
+    background: #f8f8f8;
+    border: 1px solid #cccccc;
+    border-radius: 0px 1px 1px 0px;
+    margin-right: 8px;
+}
+
+.search__mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #f9f9f9;
+    border-radius: 20px;
+}
+
+/* Estilização Menu user actions */
+
+.menu__login {
+    margin-right: 24px;
+}
+
+.menu-login__list1 {
+    display: flex;
+    align-items: center;
+}
+
+.menu-login__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu-login__link {
+    display: block;
+    line-height: 0px;
+}
