@@ -200,3 +200,56 @@
     border-radius: 100%;
     margin-left: auto;
 }
+
+/* ------------ Content -------------------*/
+
+.main-content {
+    width: calc(100% - 196px);
+}
+
+.main {
+    display: flex;
+}
+
+/* Estilização Categories */
+
+.categories {
+    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+    padding: 12px  20px  12px 20px;
+}
+
+.categories__list {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.categories__item {
+    
+}
+
+.categories__button {
+    background: #F2F2F2;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 16px;
+    display: flex;
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    transition: .3s all ease-in-out;
+    color: #000;
+}
+
+.categories__button--active,
+.categories__button:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.categories__button:hover {
+    background: #555;
+}
