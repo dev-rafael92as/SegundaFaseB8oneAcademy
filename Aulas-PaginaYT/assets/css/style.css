@@ -225,9 +225,6 @@
     gap: 0 10px;
 }
 
-.categories__item {
-    
-}
 
 .categories__button {
     background: #F2F2F2;
@@ -252,4 +249,62 @@
 
 .categories__button:hover {
     background: #555;
+}
+
+/* Estilização Banner */
+
+.banner {
+    position: relative;
+    margin-top: 48px;
+}
+
+.banner__image {
+    width: 100%;
+}
+
+.banner__info {
+    position: absolute;
+    top: calc(50% - 12px);
+    transform:  translateY(-50%);
+    left: 20px
+}
+
+.banner__logo {
+    margin-bottom: 16px;
+}
+
+.banner__title {
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+    max-width: 330px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.banner__link {
+    display: inline-block;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #065FD4;
+    width: 133px;
+    height: 34px;
+    border: 1.5px solid #065FD4;
+    padding: 10px 16px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.banner__close {
+    position: absolute;
+    top: calc(50% - 74px);
+    right: 45px;
+    transform: translateY(-50%);
+    line-height: 0;
 }
