@@ -255,7 +255,7 @@
 
 .banner {
     position: relative;
-    margin-top: 48px;
+    /*margin-top: 48px;*/
 }
 
 .banner__image {
@@ -282,11 +282,11 @@
     line-height: 31px;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .banner__link {
-    display: inline-block;
+    display: inline;
     align-items: center;
     font-weight: 600;
     font-size: 12px;
@@ -307,4 +307,90 @@
     right: 45px;
     transform: translateY(-50%);
     line-height: 0;
+}
+
+/* Estilização Gallery */
+
+.gallery {
+    padding: 0 28px 48px 20px;
+    margin-top: 48px;
+}
+
+.gallery__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 36px 12px;
+}
+
+.gallery__item {
+    width: calc(25% - ((3 * 12px)/ 4));
+}
+
+.gallery-video__thumb {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+.gallery-video__image {
+    width: 100%;
+}
+
+.gallery-video__time {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: rgba(0,0,0.99);
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 4px;
+}
+
+.gallery-video__info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.gallery-video__block--left {
+    margin-right: 12px;
+    line-height: 0;
+}
+
+
+.gallery-video__name {
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.gallery-video__name-user {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #727272;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-video__icon--check {
+    margin-left: 6px;
+}
+
+.gallery-video__text {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #727272;
 }
