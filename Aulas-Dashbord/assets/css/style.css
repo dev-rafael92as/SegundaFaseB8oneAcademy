@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilização Sidebar */
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 168px 36px 32px 40px;
+    height: 100%;
+    width: min(100%, 252px);
+    border-right: 1px solid #EBEBEB;
+}
+
+/* Estilização Menu */
+
+.nav__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #C7C7C7;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover, 
+.nav__link--active {
+    background-color: #F0F7FF;
+    color: #197BBD;
+}
+
+.nav__icon {
+    margin-right: 18px;
+}
+
+.nav__icon rect {
+    fill: transparent;
+}
+
+.nav__icon path {
+    transition: all .3s ease-in-out;
+}
+
+.nav__link--active .nav__icon path,
+.nav__link:hover .nav__icon path {
+    stroke: #197BBD;
+}
+
+/* Estilização Upsell */
+
+.upsell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upsell__illustration {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.upsell__description {
+    font-family: 'Suprema', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #404040;
+    width: min(100%, 130px);
+    margin-bottom: 16px;
+}
+
+.upsell__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #404040;
+    background: #FFC145;
+    border-radius: 14px;
+    height: 40px;
+    width: min(100%, 164px);
+    gap: 0px 4px;
+    transition: all .3s ease-in-out;
+}
+
+.upsell__button:hover {
+    opacity: .7;
+}
